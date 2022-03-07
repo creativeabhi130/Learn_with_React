@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combobox</title>
+</head>
+
+<body>
+    <div id="message"></div>
+    <select name="Combobox" id="" onchange="chooseCourse()">
+        <option value="">Select option</option>
+        <option value="Html">Html</option>
+        <option value="Css">Css</option>
+        <option value="javascript">javascript</option>
+
+    </select>
+
+    <script>
+        function chooseCourse() {
+            console.log(event.target.value);
+            const element = document.getElementById("message");
+            element.innerHTML = event.target.value;
+
+        }
+    </script>
+</body>
+
+</html>
