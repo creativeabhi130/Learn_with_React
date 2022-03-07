@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="firstname">
+    <button onclick="handleClick()" onmouseout="handleClick()">Click</button>
+    <!--  //onclick = attribute -->
+</body>
+<script>
+    const firstnameField = document.getElementById('firstname');//firstnamefield
+    console.log(firstnameField);
+    firstnameField.style.backgroundColor = "yellow"; // dom manipulation
+    /* function handleClick(params) {// event handler
+        console.log(event);
+        firstnameField.style.backgroundColor = "red";
+    }
+
+ */
+    const handleClick = function (params) {
+        console.log(event);
+        firstnameField.style.backgroundColor = "green";
+    }
+
+
+</script>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+
+    <h5>print star</h5>
+    <!-- <script lang="text\javascript">
+        printstar();
+        document.write("\r");
+        printstar();
+        function printstar(starcount) {
+
+            let symbol = ""
+            for (let count = 0; count < startcount; count++) {
+                symbol += "*"
+            }
+            console.log(symbol)
+        }
+        printstar(9);
+    </script> -->
+
+    <script>
+        function printStars(starCount) {
+            let symbol = "";
+            for (let count = 0; count < starCount; count++) {
+                for (let rowCount = 0; rowCount < starCount - count; rowCount++) {
+                    symbol += "*";
+                } symbol += "\n";
+            } console.log(symbol);
+        } printStars(5); // printStars(20); 
+    </script>
+</body>
+
+</html>
