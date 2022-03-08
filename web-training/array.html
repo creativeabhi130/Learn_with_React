@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <h1>createArray</h1>
+    <script>
+        function createArray() {
+            const numbers = [1, 2, 11, -1, 3, 4, 5];
+            numbers.push(-2);
+            // numbers = 'ram';
+            // variable = reference which can be reassigned a new value
+            // mutable = object which can be changed
+            //constant = reference which can't be reassigned to new value
+            const a = 1;
+            // a = 2;
+            function comparator(count1, count2) {
+                return count1 - count2
+            }
+            numbers.sort(function (count1, count2) {//inline or anonymous function
+                return count1 - count2
+            });
+            numbers.sort((count1, count2) => {//arrow function
+                return count1 - count2
+            });
+            //get the sum of numbers array
+            function getSum(total, numbers) {
+                return total - numbers;
+            }
+            const sum = numbers.reduce(getSum);
+            console.log(sum);
+            const scores = [45, 23, 67];
+            scores.sort(comparator);
+            console.log(numbers);
+
+            // increase the numbers by one , output : [2,3,12,0,4,5,6]  ,use map function
+            const numbers1 = numbers.map(function increasedByOne(numbers) {
+                return ++numbers
+            })
+            console.log(numbers1);
+        }
+        createArray()
+    </script>
+</body>
+
+</html>

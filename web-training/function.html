@@ -27,17 +27,40 @@
         }
         printstar(9);
     </script> -->
-
+    <input id='count' type="text">
+    <button onclick="printstarsFromTextfield()" onblur="printstarsFromTextfield()">
+        onclick <br>
+    </button>
     <script>
+        function printstarsFromTextfield() {//event handler
+            const count = document.getElementById('count'); //geet reference to DOM element
+            console.log(event);
+            printStars(count.value)
+        }
+
         function printStars(starCount) {
+
             let symbol = "";
             for (let count = 0; count < starCount; count++) {
                 for (let rowCount = 0; rowCount < starCount - count; rowCount++) {
                     symbol += "*";
                 } symbol += "\n";
-            } console.log(symbol);
-        } printStars(5); // printStars(20); 
+            }
+            console.log(symbol);
+        }
+        printStars(5);
+
+        function printStarUsingWhile(starcount) {
+            let symbol = "";
+            let count = 0;
+            while (count < starcount)
+                symbol += "*";
+            count++;
+        }
+
+
     </script>
 </body>
+
 
 </html>
