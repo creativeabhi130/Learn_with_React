@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Password Reset|Create New Password</title>
+</head>
+
+<body>
+    <h3>Create a new Password</h3>
+    <p>We recommend a random combination of <br> numbers,letters and symbols.Don't use a <br>
+        password you use for websites.</p>
+    <div class="form">
+
+        <input type="password" name="password" id="password" placeholder="Enter your New Password"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*?[!@#$%^&*+`~=?\|<>/].{8,32}"
+            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 and max 32 characters"
+            required>
+        <label + for="password" class="label-name">
+            <span class="content-name"> <strong>New Password</strong> </span>
+        </label>
+
+
+
+        <div id="message">
+            <h4><strong>Your Passoword must include:</strong></h4>
+            <p id="captial" class="invalid">at least captial letter</p>
+            <p id="letter" class="invalid">at least one number </p>
+            <p id="symbols" class="invalid">at least one special character(!,#,$,*)</p>
+            <p id="letter" class="invalid">at least lowercase letter</p>
+            <p id="length" class="invalid">between 8 and 32 characters</p>
+
+            <br>
+            <input type="submit" value="CONTINUE" class="submit"><br><br>
+            <input type="submit" value="CANCEL" class="submit1">
+        </div>
+    </div>
+
+</body>
+<script src="Index.js"></script>
+
+</html>
